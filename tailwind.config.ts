@@ -27,8 +27,8 @@ export default {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         brand: {
-          blue: "#0066CC",
-          orange: "#FF6F3C",
+          purple: "#6C63FF",
+          teal: "#4ECDC4",
         },
         primary: {
           DEFAULT: "hsl(var(--primary))",
@@ -80,12 +80,17 @@ export default {
           "0%": { opacity: "0", transform: "translateY(20px)" },
           "100%": { opacity: "1", transform: "translateY(0)" },
         },
+        parallax: {
+          "0%": { transform: "translateY(0)" },
+          "100%": { transform: "translateY(-10px)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "fade-in": "fade-in 0.5s ease-out",
         "fade-in-up": "fade-in-up 0.7s ease-out",
+        parallax: "parallax 8s ease-in-out infinite alternate",
       },
     },
   },
